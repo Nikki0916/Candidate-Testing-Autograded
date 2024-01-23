@@ -24,9 +24,9 @@ let candidateAnswers =[];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-// console.log(input.question("What is your name: "))
-// }
-// function askQuestion() {
+console.log(input.question("What is your name: "))
+}
+function askQuestion() {
 for (let i = 0; i < questions.length; i++) {
   candidateAnswers.push(input.question(`${questions[i]}`));
 }
@@ -45,7 +45,7 @@ function gradeQuiz(candidateAnswers) {
 for (let i = 0; i < questions.length; i++) {
   console.log (`Question ${i + 1} Your Response - ${candidateAnswers[i]}, Correct Answer - ${correctAnswers[i]}`)
 }
-  let grade;  //TODO 3.2 use this variable to calculate the candidates score.
+  let grade = [] //TODO 3.2 use this variable to calculate the candidates score.
 
 
   return grade;
